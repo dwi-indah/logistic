@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logistics</title>
+  <link rel="stylesheet" href="asset/css/style.css">
+  <!-- <style>
+    .hero-overlay {
+      background: rgba(0,0,0,0.5);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .track-input input {
+      border-radius: 50px 0 0 50px;
+      border: none;
+      padding: 10px 15px;
+    }
+    .track-input button {
+      border-radius: 0 50px 50px 0;
+    }
+    .services .icon-box {
+      background: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .services .icon-box:hover {
+      background: #dc3545;
+      color: white;
+    }
+    .contact-form {
+      background: #ff4d4d;
+      color: white;
+      padding: 30px;
+      border-radius: 15px;
+    }
+    footer {
+      background: black;
+      color: white;
+      padding: 30px 0;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+  </style> -->
+</head>
+<body>
+
+<!-- Navbar -->
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">LOGO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+      </ul>
+      <a href="#" class="btn btn-danger ms-3">Contact us</a>
+    </div>
+  </div>
+</nav> -->
+<nav class="navbar navbar-expand-lg bg-transparent">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center h-100">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content text-center">
+      <div class="hero-content">
+        <h2 class="fw-bold">Mesmerizing Colors of <span class="text-danger">Aurora</span></h2>
+        <p>Journey to the edge of wonder as we unveil the Aurora Borealis. Where the most dazzling lights inspire stories and ignite your imagination.</p>
+      </div>
+      <div class="d-flex justify-content-center mt-4 track-input">
+        <input type="text" class="form-control w-50" placeholder="Input Resi No">
+        <button class="btn btn-danger"><i class="bi bi-search"></i></button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Tracking -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h4 class="fw-bold">TRACE & TRACK YOUR PACKAGE</h4>
+      <p>For Resi No JX99997436</p>
+      <div class="text-start mx-auto" style="max-width:600px;">
+        <ul class="timeline list-unstyled">
+          <li><b>Dec 11 - Delivered</b><br>Your package has been delivered. Recipient: CUSTOMER</li>
+          <li class="mt-3"><b>Dec 08 - Arrived at logistics hub</b><br>Your package has arrived at the delivery hub in JAKARTA</li>
+          <li class="mt-3"><b>Dec 04 - Departed sorting center</b><br>Arrived at the GATEWAY sorting center</li>
+          <li class="mt-3"><b>Dec 01 - Arrived at sorting center</b><br>Arrived at the GATEWAY sorting center</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services -->
+  <section class="services py-5 bg-danger text-white">
+    <div class="container">
+      <h3 class="text-center fw-bold mb-4">SERVICE</h3>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="icon-box">Freight Forwarder</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="icon-box">Cargo Handling</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="icon-box">Logistics</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="icon-box">Trucking</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="icon-box">Air Cargo Supply Chain</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="icon-box">Air Cargo Agent</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="contact-form">
+            <h4 class="fw-bold">Let's Keep In Touch</h4>
+            <form class="mt-3">
+              <input type="text" class="form-control mb-2" placeholder="Name">
+              <input type="email" class="form-control mb-2" placeholder="Email">
+              <input type="text" class="form-control mb-2" placeholder="Phone No">
+              <button type="submit" class="btn btn-dark w-100">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="text-dark fs-3"><i class="bi bi-envelope"></i></a>
+            <a href="#" class="text-dark fs-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-dark fs-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-dark fs-3"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container text-center text-md-start">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>SERVICES</h5>
+        <ul class="list-unstyled">
+          <li>Freight Forwarder</li>
+          <li>Cargo Handling</li>
+          <li>Logistics</li>
+          <li>Trucking</li>
+          <li>Air Cargo Supply Chain</li>
+          <li>Air Cargo Agent</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5>CONTACT</h5>
+        <ul class="list-unstyled">
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="asset/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+</html>
