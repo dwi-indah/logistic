@@ -1,0 +1,73 @@
+body > * {
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+  z-index: 100;
+}
+
+.hero {
+  height: 95vh;
+  margin-top: -80px;
+}
+.hero-inner {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.hero-content {
+  position: absolute;
+  bottom: 0;
+}
+.hero .carousel {
+  height: 95vh;
+  overflow: hidden;
+}
+.hero .carousel-item {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 95vh;
+  aspect-ratio: auto;
+}
+.hero .carousel-item img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: auto;
+}
+@media (max-width: 1000px) {
+  .hero .carousel-item img {
+    height: 100%;
+  }
+}
+.hero .carousel-item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(9deg, rgba(255, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.footer {
+  border-radius: 0 48px 0 0;
+}
+.footer-logo {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+.footer-logo img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
