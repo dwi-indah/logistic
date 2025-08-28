@@ -21,13 +21,15 @@ formResi.addEventListener('submit', function(e) {
 
 const navList = document.querySelectorAll('.nav-link');
 const offcanvas = document.querySelector('.offcanvas');
-
-navList.forEach(el => {
-    el.addEventListener('click', function() {
-        offcanvas.classList.remove('show');
-        const offcanvasBg = document.querySelector('.offcanvas-backdrop');
-        offcanvasBg.classList.remove('show');
-        offcanvasBg.remove();
-        document.body.removeAttribute('style');
+if (window.innerWidth < 1000) {
+    navList.forEach(el => {
+        el.addEventListener('click', function() {
+            offcanvas.classList.remove('show');
+            const offcanvasBg = document.querySelector('.offcanvas-backdrop');
+            offcanvasBg.classList.remove('show');
+            offcanvasBg.remove();
+            document.body.removeAttribute('style');
+        })
     })
-})
+
+}

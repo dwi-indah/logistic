@@ -29,23 +29,12 @@ body > * {
   border-radius: 8px;
   background: transparent;
 }
-.nav-item:hover {
+.nav-item:hover, .nav-item:has(.active) {
   background: #E61510;
 }
-.nav-item:hover .nav-link {
+.nav-item:hover .nav-link, .nav-item:has(.active) .nav-link {
   color: #fff !important;
   font-weight: 800 !important;
-}
-.nav-item.-contact {
-  background: #E61510;
-  box-shadow: -1px -4px 21px -1px rgb(230, 21, 16);
-  -webkit-box-shadow: -1px -4px 21px -1px rgba(230, 21, 16, 0.52);
-  -moz-box-shadow: -1px -4px 21px -1px rgba(230, 21, 16, 0.52);
-}
-.nav-item.-contact .nav-link {
-  color: #fff;
-  text-transform: none;
-  font-weight: 900 !important;
 }
 .nav-link {
   text-transform: uppercase;
